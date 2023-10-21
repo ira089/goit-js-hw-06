@@ -1,8 +1,11 @@
-console.log("чаокакао");
-
 const ulCategories = document.querySelector("#categories");
-console.log(ulCategories);
+// console.dir(ulCategories);
 const childCategories = ulCategories.children;
-// const numberCategories = childCategories.length;
-// console.log(`Number of categories: ${numberCategories}`);
 console.log(`Number of categories: ${childCategories.length}`);
+
+const lists = document.querySelectorAll(".item");
+// console.dir(lists);
+lists.forEach((list) => {
+  console.log(`Category: ${list.firstElementChild.textContent}`);
+  console.log(`Elements: ${list.lastElementChild.children.length}`);
+});
