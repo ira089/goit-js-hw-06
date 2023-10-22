@@ -8,7 +8,7 @@ const hadlerInputNameInput = (event) => {
   event.preventDefault();
   const valueInput = event.currentTarget.value;
   console.dir(valueInput);
-  if (valueInput !== " ") {
+  if (valueInput !== "") {
     spanName.textContent = valueInput;
   } else {
     spanName.textContent = "Anonymous";
