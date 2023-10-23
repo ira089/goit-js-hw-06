@@ -1,4 +1,3 @@
-console.log("чаокакао");
 const ingredients = [
   "Potatoes",
   "Mushrooms",

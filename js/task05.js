@@ -1,8 +1,7 @@
-console.log("чащкакащ");
 const inputName = document.querySelector("#name-input");
 const spanName = document.querySelector("#name-output");
-console.dir(inputName);
-console.log(spanName.textContent);
+// console.dir(inputName);
+// console.log(spanName.textContent);
 
 const hadlerInputNameInput = (event) => {
   event.preventDefault();
