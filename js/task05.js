@@ -5,10 +5,11 @@ const spanName = document.querySelector("#name-output");
 
 const hadlerInputNameInput = (event) => {
   event.preventDefault();
-  const valueInput = event.currentTarget.value;
-  console.dir(valueInput);
-  if (valueInput !== "") {
-    spanName.textContent = valueInput;
+  const valueInputTrim = event.currentTarget.value.trim();
+
+  // console.dir(valueInputTrim);
+  if (valueInputTrim !== "") {
+    spanName.textContent = valueInputTrim;
   } else {
     spanName.textContent = "Anonymous";
   }

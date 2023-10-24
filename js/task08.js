@@ -8,6 +8,7 @@ const handlerSubmit = (event) => {
   //   console.log(password.value);
   if (email.value === "" || password.value === "") {
     alert("Fill out all form fields");
+    return;
   }
   const user = {
     email: email.value,
